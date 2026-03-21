@@ -1,0 +1,7 @@
+aid: arrow-electronics
+url: https://raw.githubusercontent.com/api-evangelist/arrow-electronics/refs/heads/main/apis.yml
+modified: '2026-03-21'
+apis: []
+common:
+  - type: Website
+    url: https://www.arrow-electronics.com
