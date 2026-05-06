@@ -1,143 +1,78 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Arrow Electronics
+providerId: arrow-electronics
+created: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
+tags:
+- Electronics
+- Components
+- Supply Chain
+- Procurement
+- Distribution
+- FinOps
+- Cost Management
+- FOCUS
+description: FOCUS-aligned FinOps placeholder for Arrow Electronics. No public billing-model details,
+  meters, or invoice schema are published; this artifact records the absence so consumers know to source
+  commercial terms from the provider directly.
+notes: Arrow Electronics offers Pricing & Availability and Order APIs to approved customers. The developer
+  portal documents authentication (login + apikey via URI parameters, separate keys per API) but does
+  not publish plan tiers, per-call pricing, or quota numbers — API keys are issued via a Request API Key
+  flow rather than a self-serve plans page.
+sources:
+- https://www.arrow.com
+- https://focus.finops.org/focus-specification/v1-3/
+- https://developers.arrow.com/api/index.php/site/page?view=Itemservice
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-provider: Arrow Electronics
-providerId: arrow-electronics
-publisherName: Arrow Electronics
-serviceCategory: API
-created: '2026-05-04'
-modified: '2026-05-04'
-tags:
-  - Electronics
-  - Components
-  - Supply Chain
-  - Procurement
-  - Distribution
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the Arrow Electronics API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+publisherName: Arrow Electronics, Inc.
+serviceCategory: Distribution / B2B Commerce
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Custom / Contract
+  billingFrequency: Per-Invoice
   billingCurrency: USD
   chargeCategories:
-    - Usage
-    - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
+  - Usage
+  - Purchase
+  - Adjustment
 focusColumns:
   ServiceName: Arrow Electronics
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Electronic Components Distribution
   ProviderName: Arrow Electronics
-  PublisherName: Arrow Electronics
-  InvoiceIssuerName: Arrow Electronics
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: Arrow Electronics, Inc.
+  InvoiceIssuerName: Arrow Electronics, Inc.
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
-    dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: Arrow Electronics Pricing and Availability API
-    baseURL: https://api.arrow.com/itemservice/v4
-    tags:
-      - Pricing
-      - Availability
-      - Electronics
-      - Components
-      - Inventory
-    serviceName: Arrow Electronics Pricing and Availability API
-    serviceCategory: API
-  - name: Arrow Electronics Order API
-    baseURL: https://api.arrow.com
-    tags:
-      - Orders
-      - Procurement
-      - E-Commerce
-      - Supply Chain
-    serviceName: Arrow Electronics Order API
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+- name: contract_usage
+  description: Catch-all meter for contract-governed consumption. Replace with provider-specific line
+    items once an invoice or usage schema is available.
+  unit: varies
+  aggregation: sum
+  dimensions:
+  - contract
+  - consumer
+principles:
+- name: Visibility
+  description: Because the provider does not publish a usage API or self-serve billing dashboard, request
+    invoice copies and contract usage exports directly from the account team and load them into your own
+    FinOps tooling.
+- name: Allocation
+  description: Allocate spend by tagging invoice line items to consuming business units in your ERP /
+    FinOps store; no provider-side tagging surface is available.
+- name: Optimization
+  description: Optimization levers are commercial — renegotiate volume commitments, consolidate accounts,
+    or align contract scope with actual usage at renewal.
+- name: Accountability
+  description: Assign a contract owner who reviews invoices against the negotiated agreement, since usage
+    drift cannot be detected from a published meter feed.
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
