@@ -44,6 +44,8 @@ apis:
         url: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
       - type: Authentication
         url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
+      - url: openapi/arrow-electronics-openapi.yml
+        type: OpenAPI
   - aid: arrow-electronics:order-api
     name: Arrow Electronics Order API
     description: >-
