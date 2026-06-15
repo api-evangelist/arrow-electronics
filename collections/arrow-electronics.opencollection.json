@@ -1,0 +1,99 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Arrow Electronics ItemService API",
+    "version": "4.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search for items using a search token",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.arrow.com/itemservice/v4/en/search/token"
+      },
+      "docs": "Search for items using a search token"
+    },
+    {
+      "info": {
+        "name": "Search for items using a search token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.arrow.com/itemservice/v4/en/search/token",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Search for items using a search token"
+    },
+    {
+      "info": {
+        "name": "Search for multiple items at once",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.arrow.com/itemservice/v4/en/search/list"
+      },
+      "docs": "Search for multiple items at once"
+    },
+    {
+      "info": {
+        "name": "Search for multiple items at once",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.arrow.com/itemservice/v4/en/search/list",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Search for multiple items at once"
+    },
+    {
+      "info": {
+        "name": "Manufacturer lookup",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.arrow.com/itemservice/v4/en/lookup/manufacturer"
+      },
+      "docs": "Manufacturer lookup"
+    },
+    {
+      "info": {
+        "name": "Manufacturer lookup",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.arrow.com/itemservice/v4/en/lookup/manufacturer",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Manufacturer lookup"
+    },
+    {
+      "info": {
+        "name": "Taxonomy lookup (deprecated)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.arrow.com/itemservice/v4/en/lookup/taxonomy"
+      },
+      "docs": "Taxonomy lookup (deprecated)"
+    }
+  ],
+  "bundled": true
+}
