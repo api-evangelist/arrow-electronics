@@ -61,6 +61,8 @@ apis:
       - type: Authentication
         url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
 common:
+  - type: AgenticAccess
+    url: agentic-access/arrow-electronics-agentic-access.yml
   - type: DomainSecurity
     url: security/arrow-electronics-domain-security.yml
   - type: GitHubOrganization
