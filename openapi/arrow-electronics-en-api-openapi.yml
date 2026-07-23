@@ -1,16 +1,13 @@
 openapi: 3.1.0
 info:
-  title: Arrow Electronics ItemService API
+  title: Arrow Electronics ItemService En API
   version: 4.0.0
-  description: >-
-    Arrow Electronics ItemService v4 API for searching parts inventory and
-    looking up manufacturer codes. This minimal OpenAPI was generated from
-    the public ItemService developer documentation.
+  description: Arrow Electronics ItemService v4 API for searching parts inventory and looking up manufacturer codes. This minimal OpenAPI was generated from the public ItemService developer documentation.
 servers:
-  - url: https://api.arrow.com/itemservice/v4
-    description: Production
-x-generated-from: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
-x-generated-by: claude-crawl-2026-05-08
+- url: https://api.arrow.com/itemservice/v4
+  description: Production
+tags:
+- name: En
 paths:
   /en/search/token:
     get:
@@ -23,6 +20,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
     post:
       summary: Search for items using a search token
       operationId: searchByTokenPost
@@ -38,6 +37,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
   /en/search/list:
     get:
       summary: Search for multiple items at once
@@ -49,6 +50,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
     post:
       summary: Search for multiple items at once
       operationId: searchListPost
@@ -64,6 +67,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
   /en/lookup/manufacturer:
     get:
       summary: Manufacturer lookup
@@ -75,6 +80,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
     post:
       summary: Manufacturer lookup
       operationId: lookupManufacturerPost
@@ -90,6 +97,8 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
   /en/lookup/taxonomy:
     get:
       summary: Taxonomy lookup (deprecated)
@@ -102,3 +111,7 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - En
+x-generated-from: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
+x-generated-by: claude-crawl-2026-05-08
