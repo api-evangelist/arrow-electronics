@@ -9,7 +9,19 @@ tags:
   - Distribution
   - Fortune 500
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arrow-electronics.png
 access: 3rd-Party
 created: '2024-12-03'
 modified: '2026-05-19'
@@ -21,45 +33,38 @@ description: >-
   and supply chain automation, enabling distributors, OEMs, and procurement teams to integrate electronic component
   sourcing directly into their systems.
 apis:
-  - aid: arrow-electronics:pricing-availability-api
-    name: Arrow Electronics Pricing and Availability API
-    description: >-
-      The Arrow Electronics Pricing and Availability API enables programmatic search for electronic components,
-      retrieval of real-time pricing data, and inventory availability across Arrow's global inventory pools including
-      ACNA/NAC, VERICAL, EUROPE, ASIA, AEP, C1S, PSG, and RFPD. Returns results in JSON or XML format.
-    humanURL: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
-    baseURL: https://api.arrow.com/itemservice/v4
-    tags:
-      - Pricing
-      - Availability
-      - Electronics
-      - Components
-      - Inventory
-    properties:
-      - type: Documentation
-        url: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
-      - type: Authentication
-        url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
-      - url: openapi/arrow-electronics-openapi.yml
-        type: OpenAPI
-  - aid: arrow-electronics:order-api
-    name: Arrow Electronics Order API
-    description: >-
-      The Arrow Electronics Order API enables automated order placement for electronic components at Arrow.com and
-      Verical.com, and allows programmatic retrieval of order status information for existing orders. Requires SHA-256
-      encoded credentials and a Credit account.
-    humanURL: https://developers.arrow.com/api/index.php/site/page?view=orderApi
-    baseURL: https://api.arrow.com
-    tags:
-      - Orders
-      - Procurement
-      - E-Commerce
-      - Supply Chain
-    properties:
-      - type: Documentation
-        url: https://developers.arrow.com/api/index.php/site/page?view=orderApi
-      - type: Authentication
-        url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
+- aid: arrow-electronics:order-api
+  name: Arrow Electronics Order API
+  description: >-
+    The Arrow Electronics Order API enables automated order placement for electronic components at Arrow.com
+    and Verical.com, and allows programmatic retrieval of order status information for existing orders.
+    Requires SHA-256 encoded credentials and a Credit account.
+  humanURL: https://developers.arrow.com/api/index.php/site/page?view=orderApi
+  baseURL: https://api.arrow.com
+  tags:
+  - Orders
+  - Procurement
+  - E-Commerce
+  - Supply Chain
+  properties:
+  - type: Documentation
+    url: https://developers.arrow.com/api/index.php/site/page?view=orderApi
+  - type: Authentication
+    url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
+- aid: arrow-electronics:arrow-electronics-en-api
+  name: Arrow Electronics En API
+  description: The En API from Arrow Electronics — 4 operation(s) for en.
+  humanURL: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
+  baseURL: https://api.arrow.com/itemservice/v4
+  tags:
+  - En
+  properties:
+  - type: OpenAPI
+    url: openapi/arrow-electronics-en-api-openapi.yml
+  - type: Documentation
+    url: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
+  - type: Authentication
+    url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
 common:
   - type: AgenticAccess
     url: agentic-access/arrow-electronics-agentic-access.yml
