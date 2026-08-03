@@ -1,0 +1,14 @@
+{
+  "provider": "arrow-electronics",
+  "sources": [
+    "arrow-electronics-en-api-openapi.yml"
+  ],
+  "outputs": [
+    "arrow-electronics-en-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

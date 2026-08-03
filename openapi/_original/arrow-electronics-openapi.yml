@@ -1,0 +1,104 @@
+openapi: 3.1.0
+info:
+  title: Arrow Electronics ItemService API
+  version: 4.0.0
+  description: >-
+    Arrow Electronics ItemService v4 API for searching parts inventory and
+    looking up manufacturer codes. This minimal OpenAPI was generated from
+    the public ItemService developer documentation.
+servers:
+  - url: https://api.arrow.com/itemservice/v4
+    description: Production
+x-generated-from: https://developers.arrow.com/api/index.php/site/page?view=Itemservice
+x-generated-by: claude-crawl-2026-05-08
+paths:
+  /en/search/token:
+    get:
+      summary: Search for items using a search token
+      operationId: searchByToken
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Search for items using a search token
+      operationId: searchByTokenPost
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /en/search/list:
+    get:
+      summary: Search for multiple items at once
+      operationId: searchList
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Search for multiple items at once
+      operationId: searchListPost
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /en/lookup/manufacturer:
+    get:
+      summary: Manufacturer lookup
+      operationId: lookupManufacturer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Manufacturer lookup
+      operationId: lookupManufacturerPost
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /en/lookup/taxonomy:
+    get:
+      summary: Taxonomy lookup (deprecated)
+      operationId: lookupTaxonomy
+      deprecated: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
