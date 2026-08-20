@@ -42,6 +42,11 @@ apis:
   humanURL: https://developers.arrow.com/api/index.php/site/page?view=orderApi
   baseURL: https://api.arrow.com
   tags:
+  - Order
+  - Procurement
+  - E-Commerce
+  - Supply Chain
+  tags_raw:
   - Orders
   - Procurement
   - E-Commerce
