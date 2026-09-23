@@ -1,7 +1,9 @@
 ---
 title: Arrow Electronics Introduces Global AI Accelerator Program
 url: https://news.arrow.com/news-releases/news-details/2025/Arrow-Electronics-Introduces-Global-AI-Accelerator-Program/default.aspx
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Arrow Electronics" press release artificial intelligence'
 position: 1
 source: serpapi-google

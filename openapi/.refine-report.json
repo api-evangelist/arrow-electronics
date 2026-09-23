@@ -1,7 +1,7 @@
 {
   "provider": "arrow-electronics",
   "sources": [
-    "arrow-electronics-en-api-openapi.yml"
+    "_ae-authored/arrow-electronics-openapi.yml"
   ],
   "outputs": [
     "arrow-electronics-en-api-openapi.yml"
@@ -9,6 +9,20 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "arrow-electronics-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "arrow-electronics-openapi.yml: tagged paths GET /en/search/token -> En",
+    "arrow-electronics-openapi.yml: tagged paths POST /en/search/token -> En",
+    "arrow-electronics-openapi.yml: tagged paths GET /en/search/list -> En",
+    "arrow-electronics-openapi.yml: tagged paths POST /en/search/list -> En",
+    "arrow-electronics-openapi.yml: tagged paths GET /en/lookup/manufacturer -> En",
+    "arrow-electronics-openapi.yml: tagged paths POST /en/lookup/manufacturer -> En",
+    "arrow-electronics-openapi.yml: tagged paths GET /en/lookup/taxonomy -> En",
+    "arrow-electronics-openapi.yml: declared missing tag: En",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "arrow-electronics-en-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

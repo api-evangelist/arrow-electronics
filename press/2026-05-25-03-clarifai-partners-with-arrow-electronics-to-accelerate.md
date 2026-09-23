@@ -1,7 +1,9 @@
 ---
 title: Clarifai Partners with Arrow Electronics to Accelerate ...
 url: https://www.prnewswire.com/news-releases/clarifai-partners-with-arrow-electronics-to-accelerate-commercial-ai-adoption-and-distribution-302368786.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Arrow Electronics" press release artificial intelligence'
 position: 3
 source: serpapi-google

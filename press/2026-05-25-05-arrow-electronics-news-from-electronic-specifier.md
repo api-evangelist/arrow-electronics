@@ -1,7 +1,9 @@
 ---
 title: Arrow Electronics news from Electronic Specifier
 url: https://www.electronicspecifier.com/companies/arrow-electronics/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Arrow Electronics" press release artificial intelligence'
 position: 5
 source: serpapi-google
