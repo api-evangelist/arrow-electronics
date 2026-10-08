@@ -81,6 +81,12 @@ apis:
   - type: Authentication
     url: https://developers.arrow.com/api/index.php/site/page?view=gettingStarted
 common:
+- type: Plans
+  url: plans/arrow-electronics-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/arrow-electronics-rate-limits.yml
+- type: FinOps
+  url: finops/arrow-electronics-finops.yml
 - type: Website
   url: https://arrow.com
 - type: AgenticAccess
