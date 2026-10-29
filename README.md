@@ -1,4 +1,4 @@
-# Arrow Electronics (arrow-electronics)
+# Arrow Electronics
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,87 +66,116 @@
 
 Arrow Electronics is a global provider of products, services, and solutions to industrial and commercial users of electronic components and enterprise computing solutions. With over 2,200 suppliers and more than 200,000 customers worldwide, Arrow serves as a vital link in the technology supply chain, enabling the design, manufacture, and operation of electronic components. Arrow provides REST APIs for pricing and availability lookups, order placement, and supply chain automation, enabling distributors, OEMs, and procurement teams to integrate electronic component sourcing directly into their systems.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/arrow-electronics/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/arrow-electronics/refs/heads/main/apis.yml)
+**Areas:** Electronics · Components · Supply Chain · Procurement · Distribution · Fortune 500
 
-## Scope
+## Arrow Electronics on APIs.io
 
-- **Type:** Index
-- **Access:** 3rd-Party
+Everything profiled for Arrow Electronics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/arrow-electronics/](https://apis.io/providers/arrow-electronics/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Electronics
-- Components
-- Supply Chain
-- Procurement
-- Distribution
+- [Arrow Electronics Order API](https://apis.io/apis/arrow-electronics/order-api/) — The Arrow Electronics Order API enables automated order placement for electronic components at Arrow.com and Verical.com, and allows programmatic retrieval…
+- [Arrow Electronics En API](https://apis.io/apis/arrow-electronics/arrow-electronics-en-api/) — The En API from Arrow Electronics — 4 operation(s) for en.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Arrow Electronics Pricing and Availability API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Arrow Electronics Pricing and Availability API enables programmatic search for electronic components, retrieval of real-time pricing data, and inventory availability across Arrow's global inventory pools including ACNA/NAC, VERICAL, EUROPE, ASIA, AEP, C1S, PSG, and RFPD. Returns results in JSON or XML format.
+- [Arrow Electronics Agentic Access](https://apis.io/agentic-access/arrow-electronics/arrow-electronics-agentic-access/)
 
-- **Human URL:** [https://developers.arrow.com/api/index.php/site/page?view=Itemservice](https://developers.arrow.com/api/index.php/site/page?view=Itemservice)
-- **Base URL:** `https://api.arrow.com/itemservice/v4`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Pricing
-- Availability
-- Electronics
-- Components
-- Inventory
+- [Arrow Electronics ItemService API](https://apis.io/collections/arrow-electronics/open-arrow-electronics/)
+- [Arrow Electronics ItemService En API](https://apis.io/collections/arrow-electronics/open-arrow-electronics-en-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://developers.arrow.com/api/index.php/site/page?view=Itemservice)
-- [Authentication](https://developers.arrow.com/api/index.php/site/page?view=gettingStarted)
-- [OpenAPI](openapi/arrow-electronics-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/arrow-electronics.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/arrow-electronics.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Arrow Electronics Order API
+- [Arrow Electronics Domain Security](https://apis.io/security/arrow-electronics/arrow-electronics-domain-security/)
 
-The Arrow Electronics Order API enables automated order placement for electronic components at Arrow.com and Verical.com, and allows programmatic retrieval of order status information for existing orders. Requires SHA-256 encoded credentials and a Credit account.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://developers.arrow.com/api/index.php/site/page?view=orderApi](https://developers.arrow.com/api/index.php/site/page?view=orderApi)
-- **Base URL:** `https://api.arrow.com`
+Published plans, tiers and prices.
 
-#### Tags
+- [Arrow Electronics Plans Pricing](https://apis.io/plans/arrow-electronics/arrow-electronics-plans-pricing/)
 
-- Orders
-- Procurement
-- E-Commerce
-- Supply Chain
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://developers.arrow.com/api/index.php/site/page?view=orderApi)
-- [Authentication](https://developers.arrow.com/api/index.php/site/page?view=gettingStarted)
-- [Postman Collection](collections/arrow-electronics.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/arrow-electronics.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Arrow Electronics Rate Limits](https://apis.io/rate-limits/arrow-electronics/arrow-electronics-rate-limits/)
 
-## Common Properties
+#### FinOps (1)
 
-- [GitHub Organization](https://github.com/ArrowElectronics)
-- [LinkedIn](https://www.linkedin.com/company/arrow-electronics)
-- [Portal](https://developers.arrow.com/)
-- [Getting Started](https://developers.arrow.com/api/index.php/site/page?view=gettingStarted)
-- [Best Practices](https://developers.arrow.com/api/index.php/site/page?view=bestPractices)
-- [Terms of Service](https://developers.arrow.com/api/index.php/site/page?view=terms)
-- [Portal](https://www.arrow.com/)
-- [Support](mailto:api@arrow.com)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
+What the API costs to run, by operation.
 
-## Maintainers
+- [Arrow Electronics Finops](https://apis.io/finops/arrow-electronics/arrow-electronics-finops/)
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://arrow.com)
+- [Getting started](https://developers.arrow.com/api/index.php/site/page?view=gettingStarted)
+- [Terms of service](https://developers.arrow.com/api/index.php/site/page?view=terms)
+- [GitHub](https://github.com/ArrowElectronics)
+
+## API Evangelist rating
+
+**Kin Score 29.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 38.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 15.8 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/arrow-electronics/](https://apis.io/providers/arrow-electronics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Arrow Electronics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/arrow-electronics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
