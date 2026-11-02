@@ -1,0 +1,65 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Arrow Electronics
+providerId: arrow-electronics
+created: '2026-05-04'
+# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
+# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
+method: generated
+modified: '2026-05-05'
+reconciled: false
+tags:
+- Electronics
+- Components
+- Supply Chain
+- Procurement
+- Distribution
+description: Arrow Electronics does not publish a public API plans / pricing page. This artifact records
+  the absence of a self-serve commercial surface; see notes for research findings.
+notes: Arrow Electronics offers Pricing & Availability and Order APIs to approved customers. The developer
+  portal documents authentication (login + apikey via URI parameters, separate keys per API) but does
+  not publish plan tiers, per-call pricing, or quota numbers — API keys are issued via a Request API Key
+  flow rather than a self-serve plans page.
+sources:
+- https://www.arrow.com
+- https://developers.arrow.com/api/index.php/site/page?view=Itemservice
+plans:
+- id: arrow-electronics-contact-sales
+  name: Contact Sales
+  type: enterprise
+  description: No published self-serve plan. Commercial access is arranged directly with the provider;
+    quotas and pricing are governed by individual customer agreements.
+  entries:
+  - label: API Access
+    name: api_access
+    type: flat
+    metric: varies
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Negotiated Commercial Terms
+  - name: Partner Onboarding
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - negotiated
+  plans:
+  - name: Contact Sales
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - per-use
