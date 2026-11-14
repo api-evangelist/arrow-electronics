@@ -5,7 +5,19 @@ artifacts:
   agentic-access/arrow-electronics-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/arrow-electronics-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   capabilities/arrow-electronics-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  certification/observations-2026-11-10.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
     method: unknown
     evidence: no authorship recorded
   collections/arrow-electronics-en-api.opencollection.json:
@@ -20,6 +32,12 @@ artifacts:
   collections/arrow-electronics.postman_collection.json:
     method: derived
     evidence: openapi/arrow-electronics
+  data-license/arrow-electronics-data-license.yml:
+    method: harvested
+    evidence: declared in the artifact
+  eligibility/arrow-electronics-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
   finops/arrow-electronics-finops.yml:
     method: generated
     evidence: declared in the artifact
@@ -29,10 +47,16 @@ artifacts:
   heartbeat/2026-11-02.yml:
     method: unknown
     evidence: no authorship recorded
+  heartbeat/2026-11-06.yml:
+    method: unknown
+    evidence: no authorship recorded
+  heartbeat/2026-11-13.yml:
+    method: unknown
+    evidence: no authorship recorded
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -101,6 +125,9 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/arrow-electronics-en-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -151,4 +178,7 @@ artifacts:
     evidence: no authorship recorded
   sla/arrow-electronics-sla.yml:
     method: generated
+    evidence: declared in the artifact
+  terms/arrow-electronics-terms-of-service.yml:
+    method: harvested
     evidence: declared in the artifact
